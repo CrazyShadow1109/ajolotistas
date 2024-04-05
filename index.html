@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad</title>
-<link rel="shortcut icon" href="../Img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="../Img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../Img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../Img/favicon.ico" type="image/x-icon">
     <style>
+        /* Estilos generales */
         body {
             margin: 0;
             padding: 0;
@@ -48,13 +49,43 @@
             border-radius: 10px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
         }
-    </style>
-    <script>
-        function redirect(url) {
-            window.location.href = url;
+
+        /* Media queries para dispositivos con un ancho máximo de 768px (típicamente tablets en modo horizontal y móviles) */
+        @media only screen and (max-width: 768px) {
+            .content {
+                padding: 20px; /* Reducir el padding para ajustar mejor en pantallas más pequeñas */
+            }
+            .content h1 {
+                font-size: 36px; /* Reducir el tamaño del encabezado en dispositivos más pequeños */
+            }
+            .center-image {
+                width: 200px; /* Reducir el ancho de la imagen en dispositivos más pequeños */
+            }
+            .content h2 {
+                font-size: 14px; /* Reducir el tamaño del texto en dispositivos más pequeños */
+                padding: 8px 16px; /* Reducir el padding del botón */
+                margin: 3px; /* Reducir el margen entre botones */
+            }
         }
-    </script>
-    <link rel="stylesheet" href="estilos.css">
+
+        /* Media queries para dispositivos con un ancho máximo de 480px (típicamente smartphones) */
+        @media only screen and (max-width: 480px) {
+            .content {
+                padding: 10px; /* Reducir el padding aún más para dispositivos muy pequeños */
+            }
+            .content h1 {
+                font-size: 24px; /* Reducir aún más el tamaño del encabezado en dispositivos muy pequeños */
+            }
+            .center-image {
+                width: 150px; /* Reducir más el ancho de la imagen en dispositivos muy pequeños */
+            }
+            .content h2 {
+                font-size: 12px; /* Reducir aún más el tamaño del texto en dispositivos muy pequeños */
+                padding: 6px 12px; /* Reducir aún más el padding del botón */
+                margin: 2px; /* Reducir aún más el margen entre botones */
+            }
+        }
+    </style>
 </head>
 <body class="pixelify-sans">
     <div class="content">
@@ -67,6 +98,5 @@
         <h2 onclick="redirect('Redes/Youtube.html');">YOUTUBE</h2>
         <h2 onclick="redirect('Redes/Instagram.html');">INSTAGRAM</h2>
     </div>
-
 </body>
 </html>
