@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad</title>
     <style>
+        /* Estilos generales */
         body {
             margin: 0;
             padding: 0;
@@ -12,7 +13,9 @@
             background-size: cover;
             background-position: center;
             background-repeat: repeat;
+            font-family: Arial, sans-serif; /* Cambiar la fuente por defecto */
         }
+
         .container {
             position: relative;
             z-index: 1;
@@ -20,10 +23,12 @@
             color: rgb(0, 0, 0);
             padding: 50px;
         }
+
         .container h1 {
             font-size: 48px;
             margin-bottom: 30px;
         }
+
         .container h2 {
             display: inline-block;
             padding: 10px 20px;
@@ -35,10 +40,12 @@
             background-color: #FFD700;
             border: 2px solid black;
         }
+
         .container h2:hover {
             background-color: #FFFF00;
             cursor: pointer;
         }
+
         .center-image {
             display: block;
             margin: 0 auto;
@@ -46,6 +53,7 @@
             border-radius: 10px;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
         }
+
         .text-area {
             display: block;
             margin: 0 auto;
@@ -56,6 +64,31 @@
             border: 2px solid black;
             border-radius: 5px;
             resize: none;
+        }
+
+        /* Media queries para dispositivos móviles */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 20px; /* Reducir el padding para dispositivos móviles */
+            }
+
+            .container h1 {
+                font-size: 36px; /* Reducir el tamaño del título en dispositivos móviles */
+            }
+
+            .center-image {
+                width: 200px; /* Reducir el tamaño de la imagen en dispositivos móviles */
+            }
+
+            .container h2 {
+                font-size: 14px; /* Reducir el tamaño del texto del botón en dispositivos móviles */
+                padding: 8px 16px; /* Reducir el padding del botón en dispositivos móviles */
+                margin: 3px; /* Reducir el margen entre botones en dispositivos móviles */
+            }
+
+            .text-area {
+                height: 80px; /* Reducir la altura del área de texto en dispositivos móviles */
+            }
         }
     </style>
     <script>
